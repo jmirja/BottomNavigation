@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.triangleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0B5793"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First input"
+                android:padding="3dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_white"
+                android:layout_marginLeft="30dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/firstInputET"
+                android:inputType="numberDecimal"
+                app:libIZO_clearIconTint="#0B5793"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                android:backgroundTint="@color/color_white"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second input"
+                android:padding="3dp"
+                android:textColor="@color/color_white"
+                android:layout_marginLeft="30dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/secondInputET"
+                android:inputType="numberDecimal"
+                app:libIZO_clearIconTint="#0B5793"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                android:backgroundTint="@color/color_white"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Third input"
+                android:padding="3dp"
+                android:textColor="@color/color_white"
+                android:layout_marginLeft="30dp"/>
+
+            <com.libizo.CustomEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/thirdInputET"
+                android:inputType="numberDecimal"
+                app:libIZO_clearIconTint="#0B5793"
+                app:libIZO_setBorderColor="@color/color_white"
+                app:libIZO_setBorderView="true"
+                app:libIZO_setClearIconVisible="true"
+                app:libIZO_setBackgroundColor="@color/color_white"
+                android:backgroundTint="@color/color_white"
+                app:libIZO_setCornerRadius="5dp"
+                app:libIZO_setStrokeWidth="2dp"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:id="@+id/triangleCalcBTN"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Triangle type: "
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_layout_background"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/triangleTypeResultTV"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:text="clear"
+                android:textSize="10sp"
+                android:id="@+id/triangleClearBTN"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
